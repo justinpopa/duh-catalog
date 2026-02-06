@@ -1,103 +1,122 @@
 {
+  "schema_version": 1,
   "entries": [
     {
       "id": "ubuntu-24.04",
       "name": "Ubuntu 24.04 LTS",
       "description": "Ubuntu Server netboot installer (autoinstall)",
+      "version": "24.04",
+      "arch": "amd64",
       "boot_type": "linux",
       "cmdline": "ip=dhcp",
-      "files": {
-        "vmlinuz": "https://releases.ubuntu.com/noble/netboot/amd64/linux",
-        "initrd.img": "https://releases.ubuntu.com/noble/netboot/amd64/initrd"
-      }
+      "files": [
+        { "name": "vmlinuz", "url": "https://releases.ubuntu.com/noble/netboot/amd64/linux" },
+        { "name": "initrd.img", "url": "https://releases.ubuntu.com/noble/netboot/amd64/initrd" }
+      ]
     },
     {
       "id": "debian-12",
       "name": "Debian 12 Bookworm",
       "description": "Debian netboot installer",
+      "version": "12",
+      "arch": "amd64",
       "boot_type": "linux",
       "cmdline": "ip=dhcp",
-      "files": {
-        "vmlinuz": "https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux",
-        "initrd.img": "https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz"
-      }
+      "files": [
+        { "name": "vmlinuz", "url": "https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux" },
+        { "name": "initrd.img", "url": "https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz" }
+      ]
     },
     {
       "id": "debian-13",
       "name": "Debian 13 Trixie",
       "description": "Debian netboot installer",
+      "version": "13",
+      "arch": "amd64",
       "boot_type": "linux",
       "cmdline": "ip=dhcp",
-      "files": {
-        "vmlinuz": "https://deb.debian.org/debian/dists/trixie/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux",
-        "initrd.img": "https://deb.debian.org/debian/dists/trixie/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz"
-      }
+      "files": [
+        { "name": "vmlinuz", "url": "https://deb.debian.org/debian/dists/trixie/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux" },
+        { "name": "initrd.img", "url": "https://deb.debian.org/debian/dists/trixie/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz" }
+      ]
     },
     {
       "id": "rocky-9",
       "name": "Rocky Linux 9",
       "description": "Rocky Linux 9 netboot installer",
+      "version": "9",
+      "arch": "amd64",
       "boot_type": "linux",
       "cmdline": "ip=dhcp inst.repo=https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/",
-      "files": {
-        "vmlinuz": "https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/images/pxeboot/vmlinuz",
-        "initrd.img": "https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/images/pxeboot/initrd.img"
-      }
+      "files": [
+        { "name": "vmlinuz", "url": "https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/images/pxeboot/vmlinuz" },
+        { "name": "initrd.img", "url": "https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/images/pxeboot/initrd.img" }
+      ]
     },
     {
       "id": "alma-9",
       "name": "AlmaLinux 9",
       "description": "AlmaLinux 9 netboot installer",
+      "version": "9",
+      "arch": "amd64",
       "boot_type": "linux",
       "cmdline": "ip=dhcp inst.repo=https://repo.almalinux.org/almalinux/9/BaseOS/x86_64/os/",
-      "files": {
-        "vmlinuz": "https://repo.almalinux.org/almalinux/9/BaseOS/x86_64/os/images/pxeboot/vmlinuz",
-        "initrd.img": "https://repo.almalinux.org/almalinux/9/BaseOS/x86_64/os/images/pxeboot/initrd.img"
-      }
+      "files": [
+        { "name": "vmlinuz", "url": "https://repo.almalinux.org/almalinux/9/BaseOS/x86_64/os/images/pxeboot/vmlinuz" },
+        { "name": "initrd.img", "url": "https://repo.almalinux.org/almalinux/9/BaseOS/x86_64/os/images/pxeboot/initrd.img" }
+      ]
     },
     {
       "id": "fedora-42",
       "name": "Fedora 42 Server",
       "description": "Fedora Server netboot installer",
+      "version": "42",
+      "arch": "amd64",
       "boot_type": "linux",
       "cmdline": "ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/os/",
-      "files": {
-        "vmlinuz": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/os/images/pxeboot/vmlinuz",
-        "initrd.img": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/os/images/pxeboot/initrd.img"
-      }
+      "files": [
+        { "name": "vmlinuz", "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/os/images/pxeboot/vmlinuz" },
+        { "name": "initrd.img", "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/os/images/pxeboot/initrd.img" }
+      ]
     },
     {
       "id": "arch-latest",
       "name": "Arch Linux",
       "description": "Arch Linux netboot (latest)",
+      "version": "latest",
+      "arch": "amd64",
       "boot_type": "linux",
       "cmdline": "ip=dhcp",
-      "files": {
-        "vmlinuz": "https://geo.mirror.pkgbuild.com/iso/latest/arch/boot/x86_64/vmlinuz-linux",
-        "initrd.img": "https://geo.mirror.pkgbuild.com/iso/latest/arch/boot/x86_64/initramfs-linux.img"
-      }
+      "files": [
+        { "name": "vmlinuz", "url": "https://geo.mirror.pkgbuild.com/iso/latest/arch/boot/x86_64/vmlinuz-linux" },
+        { "name": "initrd.img", "url": "https://geo.mirror.pkgbuild.com/iso/latest/arch/boot/x86_64/initramfs-linux.img" }
+      ]
     },
     {
       "id": "talos-1.9",
       "name": "Talos Linux 1.9",
       "description": "Kubernetes-native OS for bare metal",
+      "version": "1.9",
+      "arch": "amd64",
       "boot_type": "linux",
       "cmdline": "ip=dhcp talos.platform=metal",
-      "files": {
-        "vmlinuz": "https://github.com/siderolabs/talos/releases/download/v1.9.0/vmlinuz-amd64",
-        "initrd.img": "https://github.com/siderolabs/talos/releases/download/v1.9.0/initramfs-amd64.xz"
-      }
+      "files": [
+        { "name": "vmlinuz", "url": "https://github.com/siderolabs/talos/releases/download/v1.9.0/vmlinuz-amd64" },
+        { "name": "initrd.img", "url": "https://github.com/siderolabs/talos/releases/download/v1.9.0/initramfs-amd64.xz" }
+      ]
     },
     {
       "id": "flatcar-stable",
       "name": "Flatcar Container Linux",
       "description": "Container-optimized Linux for infrastructure",
+      "version": "stable",
+      "arch": "amd64",
       "boot_type": "linux",
       "cmdline": "ip=dhcp flatcar.autologin",
-      "files": {
-        "vmlinuz": "https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_pxe.vmlinuz",
-        "initrd.img": "https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_pxe_image.cpio.gz"
-      }
+      "files": [
+        { "name": "vmlinuz", "url": "https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_pxe.vmlinuz" },
+        { "name": "initrd.img", "url": "https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_pxe_image.cpio.gz" }
+      ]
     }
   ]
 }
