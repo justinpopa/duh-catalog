@@ -117,6 +117,84 @@
         { "name": "vmlinuz", "url": "https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_pxe.vmlinuz" },
         { "name": "initrd.img", "url": "https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_pxe_image.cpio.gz" }
       ]
+    },
+    {
+      "id": "opensuse-tumbleweed",
+      "name": "openSUSE Tumbleweed",
+      "description": "openSUSE Tumbleweed rolling release netboot installer",
+      "version": "latest",
+      "arch": "amd64",
+      "boot_type": "linux",
+      "cmdline": "ip=dhcp install=https://download.opensuse.org/tumbleweed/repo/oss/",
+      "files": [
+        { "name": "vmlinuz", "url": "https://download.opensuse.org/tumbleweed/repo/oss/boot/x86_64/loader/linux" },
+        { "name": "initrd.img", "url": "https://download.opensuse.org/tumbleweed/repo/oss/boot/x86_64/loader/initrd" }
+      ]
+    },
+    {
+      "id": "opensuse-leap-16.0",
+      "name": "openSUSE Leap 16.0",
+      "description": "openSUSE Leap 16.0 netboot installer",
+      "version": "16.0",
+      "arch": "amd64",
+      "boot_type": "linux",
+      "cmdline": "ip=dhcp install=https://download.opensuse.org/distribution/leap/16.0/repo/oss/",
+      "files": [
+        { "name": "vmlinuz", "url": "https://download.opensuse.org/distribution/leap/16.0/repo/oss/boot/x86_64/loader/linux" },
+        { "name": "initrd.img", "url": "https://download.opensuse.org/distribution/leap/16.0/repo/oss/boot/x86_64/loader/initrd" }
+      ]
+    },
+    {
+      "id": "alpine-latest",
+      "name": "Alpine Linux",
+      "description": "Alpine Linux netboot (latest stable)",
+      "version": "latest",
+      "arch": "amd64",
+      "boot_type": "linux",
+      "cmdline": "ip=dhcp modules=loop,squashfs quiet nomodeset alpine_repo=https://dl-cdn.alpinelinux.org/alpine/latest-stable/main/ modloop=https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/netboot/modloop-lts",
+      "files": [
+        { "name": "vmlinuz", "url": "https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/netboot/vmlinuz-lts" },
+        { "name": "initrd.img", "url": "https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/netboot/initramfs-lts" }
+      ]
+    },
+    {
+      "id": "alpine-latest-arm64",
+      "name": "Alpine Linux (ARM64)",
+      "description": "Alpine Linux ARM64 netboot (latest stable)",
+      "version": "latest",
+      "arch": "arm64",
+      "boot_type": "linux",
+      "cmdline": "ip=dhcp modules=loop,squashfs quiet nomodeset alpine_repo=https://dl-cdn.alpinelinux.org/alpine/latest-stable/main/ modloop=https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/aarch64/netboot/modloop-lts",
+      "files": [
+        { "name": "vmlinuz", "url": "https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/aarch64/netboot/vmlinuz-lts" },
+        { "name": "initrd.img", "url": "https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/aarch64/netboot/initramfs-lts" }
+      ]
+    },
+    {
+      "id": "centos-stream-9",
+      "name": "CentOS Stream 9",
+      "description": "CentOS Stream 9 netboot installer",
+      "version": "9",
+      "arch": "amd64",
+      "boot_type": "linux",
+      "cmdline": "ip=dhcp inst.repo=https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/",
+      "files": [
+        { "name": "vmlinuz", "url": "https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/images/pxeboot/vmlinuz" },
+        { "name": "initrd.img", "url": "https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/images/pxeboot/initrd.img" }
+      ]
+    },
+    {
+      "id": "ubuntu-24.04-arm64",
+      "name": "Ubuntu 24.04 LTS (ARM64)",
+      "description": "Ubuntu Server ARM64 netboot installer (autoinstall)",
+      "version": "24.04",
+      "arch": "arm64",
+      "boot_type": "linux",
+      "cmdline": "ip=dhcp",
+      "files": [
+        { "name": "vmlinuz", "url": "https://cdimage.ubuntu.com/releases/24.04.3/release/netboot/arm64/linux" },
+        { "name": "initrd.img", "url": "https://cdimage.ubuntu.com/releases/24.04.3/release/netboot/arm64/initrd" }
+      ]
     }
   ]
 }
