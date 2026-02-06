@@ -159,8 +159,8 @@
     },
     {
       "id": "alpine-latest-arm64",
-      "name": "Alpine Linux (ARM64)",
-      "description": "Alpine Linux ARM64 netboot (latest stable)",
+      "name": "Alpine Linux",
+      "description": "Alpine Linux netboot (latest stable)",
       "version": "latest",
       "arch": "arm64",
       "boot_type": "linux",
@@ -185,8 +185,8 @@
     },
     {
       "id": "ubuntu-24.04-arm64",
-      "name": "Ubuntu 24.04 LTS (ARM64)",
-      "description": "Ubuntu Server ARM64 netboot installer (autoinstall)",
+      "name": "Ubuntu 24.04 LTS",
+      "description": "Ubuntu Server netboot installer (autoinstall)",
       "version": "24.04",
       "arch": "arm64",
       "boot_type": "linux",
