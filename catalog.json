@@ -3,12 +3,12 @@
     {
       "id": "ubuntu-24.04",
       "name": "Ubuntu 24.04 LTS",
-      "description": "Ubuntu Server netboot installer",
+      "description": "Ubuntu Server netboot installer (autoinstall)",
       "boot_type": "linux",
       "cmdline": "ip=dhcp",
       "files": {
-        "vmlinuz": "http://archive.ubuntu.com/ubuntu/dists/noble/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/linux",
-        "initrd.img": "http://archive.ubuntu.com/ubuntu/dists/noble/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/initrd.gz"
+        "vmlinuz": "https://releases.ubuntu.com/noble/netboot/amd64/linux",
+        "initrd.img": "https://releases.ubuntu.com/noble/netboot/amd64/initrd"
       }
     },
     {
@@ -20,6 +20,17 @@
       "files": {
         "vmlinuz": "https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux",
         "initrd.img": "https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz"
+      }
+    },
+    {
+      "id": "debian-13",
+      "name": "Debian 13 Trixie",
+      "description": "Debian netboot installer",
+      "boot_type": "linux",
+      "cmdline": "ip=dhcp",
+      "files": {
+        "vmlinuz": "https://deb.debian.org/debian/dists/trixie/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux",
+        "initrd.img": "https://deb.debian.org/debian/dists/trixie/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz"
       }
     },
     {
@@ -45,14 +56,14 @@
       }
     },
     {
-      "id": "fedora-41",
-      "name": "Fedora 41 Server",
+      "id": "fedora-42",
+      "name": "Fedora 42 Server",
       "description": "Fedora Server netboot installer",
       "boot_type": "linux",
-      "cmdline": "ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/41/Server/x86_64/os/",
+      "cmdline": "ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/os/",
       "files": {
-        "vmlinuz": "https://download.fedoraproject.org/pub/fedora/linux/releases/41/Server/x86_64/os/images/pxeboot/vmlinuz",
-        "initrd.img": "https://download.fedoraproject.org/pub/fedora/linux/releases/41/Server/x86_64/os/images/pxeboot/initrd.img"
+        "vmlinuz": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/os/images/pxeboot/vmlinuz",
+        "initrd.img": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/os/images/pxeboot/initrd.img"
       }
     },
     {
